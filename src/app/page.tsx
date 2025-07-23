@@ -7,7 +7,6 @@ import {
   Shield,
   Sparkles,
   Coffee,
-  Droplet,
   Phone,
   Instagram,
   MessageCircle,
@@ -238,23 +237,38 @@ export default function Home() {
           >
             <motion.h2
               variants={fadeUpVariants}
-              className="text-3xl md:text-4xl font-heading font-bold text-nuvanas-green-800 text-center mb-12"
+              className="text-3xl md:text-4xl font-heading font-bold text-nuvanas-green-800 text-center mb-4"
             >
               Nuestros Productos Estrella
             </motion.h2>
+            
+            <motion.p
+              variants={fadeUpVariants}
+              className="text-lg text-nuvanas-green-600 text-center mb-12 max-w-3xl mx-auto"
+            >
+              Descubre nuestra línea completa de productos naturales, cada uno diseñado específicamente para tu bienestar y cuidado personal.
+            </motion.p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Crema Dental Herbs */}
               <motion.div variants={fadeUpVariants}>
-                <Card className="h-full hover:shadow-xl transition-shadow duration-300 border-nuvanas-gold-100">
-                  <CardContent className="p-6">
-                    <div className="w-full h-48 bg-nuvanas-gold-50 rounded-lg mb-4 flex items-center justify-center">
-                      <Sparkles className="w-16 h-16 text-nuvanas-gold-400" />
+                <Card className="group h-full hover:shadow-2xl transition-all duration-300 border-nuvanas-gold-100 overflow-hidden">
+                  <div className="relative">
+                    <img
+                      src="/assets/PastaDentalFullInfo.jpeg"
+                      alt="Crema Dental Herbs HGW"
+                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute top-4 right-4 bg-nuvanas-gold-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      ✨ Herbal
                     </div>
+                  </div>
+                  <CardContent className="p-6">
                     <h3 className="text-xl font-semibold text-nuvanas-green-800 mb-3">
                       Crema Dental Herbs
                     </h3>
                     <p className="text-nuvanas-green-600 mb-4">
-                      Pasta dental HGW con ingredientes naturales, sin pigmentos añadidos. Formulada con hierbas tradicionales chinas que combaten bacterias y virus.
+                      Pasta dental HGW con ingredientes naturales, sin pigmentos añadidos. Formulada con hierbas tradicionales chinas.
                     </p>
                     <div className="text-sm text-nuvanas-green-700 mb-4">
                       <div className="mb-2 font-semibold">Beneficios:</div>
@@ -277,24 +291,32 @@ export default function Home() {
                 </Card>
               </motion.div>
 
+              {/* Toallas Sanitarias */}
               <motion.div variants={fadeUpVariants}>
-                <Card className="h-full hover:shadow-xl transition-shadow duration-300 border-nuvanas-rose-100">
-                  <CardContent className="p-6">
-                    <div className="w-full h-48 bg-nuvanas-rose-50 rounded-lg mb-4 flex items-center justify-center">
-                      <Heart className="w-16 h-16 text-nuvanas-rose-400" />
+                <Card className="group h-full hover:shadow-2xl transition-all duration-300 border-nuvanas-rose-100 overflow-hidden">
+                  <div className="relative">
+                    <img
+                      src="/assets/ToallasFullInfo.jpeg"
+                      alt="Toallas Sanitarias HGW con Turmalina"
+                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute top-4 right-4 bg-nuvanas-rose-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      💎 Turmalina
                     </div>
+                  </div>
+                  <CardContent className="p-6">
                     <h3 className="text-xl font-semibold text-nuvanas-green-800 mb-3">
                       Toallas Sanitarias HGW
                     </h3>
                     <p className="text-nuvanas-green-600 mb-4">
-                      Diseñadas para la higiene y protección durante el período menstrual. Se distinguen por incorporar una banda aniónica de turmalina.
+                      Diseñadas para la higiene y protección durante el período menstrual. Con banda aniónica de turmalina.
                     </p>
                     <div className="text-sm text-nuvanas-green-700 mb-4">
                       <div className="mb-2 font-semibold">Beneficios:</div>
                       <ul className="text-xs space-y-1">
                         <li>• Alta capacidad de absorción</li>
                         <li>• Neutraliza olores con turmalina</li>
-                        <li>• Previene bacterias, hongos e infecciones</li>
+                        <li>• Previene bacterias y hongos</li>
                         <li>• Equilibra el pH vaginal</li>
                         <li>• Disminuye cólicos e inflamaciones</li>
                       </ul>
@@ -311,17 +333,25 @@ export default function Home() {
                 </Card>
               </motion.div>
 
+              {/* Jabón de Oliva */}
               <motion.div variants={fadeUpVariants}>
-                <Card className="h-full hover:shadow-xl transition-shadow duration-300 border-nuvanas-green-100">
-                  <CardContent className="p-6">
-                    <div className="w-full h-48 bg-nuvanas-green-50 rounded-lg mb-4 flex items-center justify-center">
-                      <Droplet className="w-16 h-16 text-nuvanas-green-400" />
+                <Card className="group h-full hover:shadow-2xl transition-all duration-300 border-nuvanas-green-100 overflow-hidden">
+                  <div className="relative">
+                    <img
+                      src="/assets/JabonDeOliva.jpeg"
+                      alt="Jabón de Oliva HGW"
+                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute top-4 right-4 bg-nuvanas-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      🫒 Oliva
                     </div>
+                  </div>
+                  <CardContent className="p-6">
                     <h3 className="text-xl font-semibold text-nuvanas-green-800 mb-3">
                       Jabón de Oliva HGW
                     </h3>
                     <p className="text-nuvanas-green-600 mb-4">
-                      Sirve para limpiar, hidratar y suavizar la piel. Contiene aceite de oliva, miel y vitamina E.
+                      Para limpiar, hidratar y suavizar la piel. Contiene aceite de oliva, miel y vitamina E.
                     </p>
                     <div className="text-sm text-nuvanas-green-700 mb-4">
                       <div className="mb-2 font-semibold">Aporta:</div>
@@ -345,17 +375,25 @@ export default function Home() {
                 </Card>
               </motion.div>
 
+              {/* Jabón de Turmalina */}
               <motion.div variants={fadeUpVariants}>
-                <Card className="h-full hover:shadow-xl transition-shadow duration-300 border-nuvanas-earth-100">
-                  <CardContent className="p-6">
-                    <div className="w-full h-48 bg-nuvanas-earth-50 rounded-lg mb-4 flex items-center justify-center">
-                      <Sparkles className="w-16 h-16 text-nuvanas-earth-400" />
+                <Card className="group h-full hover:shadow-2xl transition-all duration-300 border-nuvanas-earth-100 overflow-hidden">
+                  <div className="relative">
+                    <img
+                      src="/assets/ToumalineJabon.jpeg"
+                      alt="Jabón de Turmalina HGW"
+                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute top-4 right-4 bg-nuvanas-earth-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      💎 Turmalina
                     </div>
+                  </div>
+                  <CardContent className="p-6">
                     <h3 className="text-xl font-semibold text-nuvanas-green-800 mb-3">
                       Jabón de Turmalina HGW
                     </h3>
                     <p className="text-nuvanas-green-600 mb-4">
-                      Adecuado para todo tipo de piel, se puede usar en la cara y en el cuerpo. Con propiedades antibacterianas y antialérgenicas.
+                      Adecuado para todo tipo de piel, se puede usar en la cara y en el cuerpo. Con propiedades antibacterianas.
                     </p>
                     <div className="text-sm text-nuvanas-green-700 mb-4">
                       <div className="mb-2 font-semibold">Beneficios:</div>
@@ -379,17 +417,25 @@ export default function Home() {
                 </Card>
               </motion.div>
 
+              {/* Candy Blueberry */}
               <motion.div variants={fadeUpVariants}>
-                <Card className="h-full hover:shadow-xl transition-shadow duration-300 border-nuvanas-rose-100">
-                  <CardContent className="p-6">
-                    <div className="w-full h-48 bg-nuvanas-rose-50 rounded-lg mb-4 flex items-center justify-center">
-                      <Heart className="w-16 h-16 text-nuvanas-rose-400" />
+                <Card className="group h-full hover:shadow-2xl transition-all duration-300 border-nuvanas-rose-100 overflow-hidden">
+                  <div className="relative">
+                    <img
+                      src="/assets/BluberryCandy.jpeg"
+                      alt="Candy Blueberry"
+                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute top-4 right-4 bg-nuvanas-rose-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      🫐 Antioxidante
                     </div>
+                  </div>
+                  <CardContent className="p-6">
                     <h3 className="text-xl font-semibold text-nuvanas-green-800 mb-3">
                       Candy Blueberry
                     </h3>
                     <p className="text-nuvanas-green-600 mb-4">
-                      Los arándanos son famosos por su alto contenido de antioxidantes, especialmente las antocianinas, que apoyan la respuesta inmune.
+                      Alto contenido de antioxidantes, especialmente antocianinas, que apoyan la respuesta inmune.
                     </p>
                     <div className="text-sm text-nuvanas-green-700 mb-4">
                       <div className="mb-2 font-semibold">Te ayudará a:</div>
@@ -412,17 +458,25 @@ export default function Home() {
                 </Card>
               </motion.div>
 
+              {/* Protectores Diarios */}
               <motion.div variants={fadeUpVariants}>
-                <Card className="h-full hover:shadow-xl transition-shadow duration-300 border-nuvanas-green-100">
-                  <CardContent className="p-6">
-                    <div className="w-full h-48 bg-nuvanas-green-50 rounded-lg mb-4 flex items-center justify-center">
-                      <Shield className="w-16 h-16 text-nuvanas-green-400" />
+                <Card className="group h-full hover:shadow-2xl transition-all duration-300 border-nuvanas-green-100 overflow-hidden">
+                  <div className="relative">
+                    <img
+                      src="/assets/Protectores.jpeg"
+                      alt="Protectores Diarios HGW"
+                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute top-4 right-4 bg-nuvanas-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      💎 Turmalina
                     </div>
+                  </div>
+                  <CardContent className="p-6">
                     <h3 className="text-xl font-semibold text-nuvanas-green-800 mb-3">
                       Protectores Diarios HGW
                     </h3>
                     <p className="text-nuvanas-green-600 mb-4">
-                      Con turmalina, hechos para absorber el flujo vaginal y mantener la zona íntima fresca y limpia.
+                      Con turmalina, para absorber el flujo vaginal y mantener la zona íntima fresca y limpia.
                     </p>
                     <div className="text-sm text-nuvanas-green-700 mb-4">
                       <div className="mb-2 font-semibold">Beneficios:</div>
@@ -445,6 +499,93 @@ export default function Home() {
                 </Card>
               </motion.div>
             </div>
+
+            {/* Galería adicional de productos */}
+            <motion.div variants={fadeUpVariants} className="mt-16">
+              <h3 className="text-2xl font-semibold text-nuvanas-green-800 text-center mb-8">
+                Más de Nuestra Línea de Productos
+              </h3>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div className="group relative overflow-hidden rounded-xl">
+                  <img
+                    src="/assets/MielDeAbeja.jpeg"
+                    alt="Miel de Abeja"
+                    className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-white text-sm font-semibold">Miel de Abeja</span>
+                  </div>
+                </div>
+                
+                <div className="group relative overflow-hidden rounded-xl">
+                  <img
+                    src="/assets/AloeVeraGel.jpeg"
+                    alt="Aloe Vera Gel"
+                    className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-white text-sm font-semibold">Aloe Vera Gel</span>
+                  </div>
+                </div>
+                
+                <div className="group relative overflow-hidden rounded-xl">
+                  <img
+                    src="/assets/Aceite.jpeg"
+                    alt="Aceite Natural"
+                    className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-white text-sm font-semibold">Aceite Natural</span>
+                  </div>
+                </div>
+                
+                <div className="group relative overflow-hidden rounded-xl">
+                  <img
+                    src="/assets/ToallaNocturnas.jpeg"
+                    alt="Toallas Nocturnas"
+                    className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-white text-sm font-semibold">Toallas Nocturnas</span>
+                  </div>
+                </div>
+                
+                <div className="group relative overflow-hidden rounded-xl">
+                  <img
+                    src="/assets/ComboHigieneFemenina.jpeg"
+                    alt="Combo Higiene Femenina"
+                    className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-white text-sm font-semibold">Combo Higiene</span>
+                  </div>
+                </div>
+                
+                <div className="group relative overflow-hidden rounded-xl">
+                  <img
+                    src="/assets/NuestrosJabones.jpeg"
+                    alt="Colección de Jabones"
+                    className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-white text-sm font-semibold">Colección Jabones</span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Call to Action */}
+            <motion.div variants={fadeUpVariants} className="text-center mt-12">
+              <Button
+                size="lg"
+                onClick={() => window.open('https://wa.me/573146232756', '_blank')}
+                className="bg-nuvanas-green-600 hover:bg-nuvanas-green-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-black cursor-pointer"
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                Consulta por Nuestros Productos
+              </Button>
+            </motion.div>
           </motion.div>
         </div>
       </section>
