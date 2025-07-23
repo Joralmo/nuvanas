@@ -127,7 +127,7 @@ export default function Home() {
               className="relative max-w-2xl mx-auto"
             >
               <img
-                src="http://nudonaturemade.com/cdn/shop/products/nudonaturemade_eco-friendlywellnessessentialsset_packaging_72dp_1200x1200.png?v=1679651222"
+                src="/assets/ProductosNuvanas.jpeg"
                 alt="Productos Nuvanas"
                 className="rounded-2xl shadow-2xl w-full"
               />
@@ -338,7 +338,7 @@ export default function Home() {
                 <Card className="group h-full hover:shadow-2xl transition-all duration-300 border-nuvanas-green-100 overflow-hidden">
                   <div className="relative">
                     <img
-                      src="/assets/JabonDeOliva.jpeg"
+                      src="/assets/JabonDeOlivaNuevaPortada.jpeg"
                       alt="Jabón de Oliva HGW"
                       className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
@@ -380,7 +380,7 @@ export default function Home() {
                 <Card className="group h-full hover:shadow-2xl transition-all duration-300 border-nuvanas-earth-100 overflow-hidden">
                   <div className="relative">
                     <img
-                      src="/assets/ToumalineJabon.jpeg"
+                      src="/assets/JabonTurmalinaPortadaNueva.jpeg"
                       alt="Jabón de Turmalina HGW"
                       className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
@@ -463,7 +463,7 @@ export default function Home() {
                 <Card className="group h-full hover:shadow-2xl transition-all duration-300 border-nuvanas-green-100 overflow-hidden">
                   <div className="relative">
                     <img
-                      src="/assets/Protectores.jpeg"
+                      src="/assets/ProtectoresDiariasNuevaImagen.jpeg"
                       alt="Protectores Diarios HGW"
                       className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
@@ -493,6 +493,52 @@ export default function Home() {
                       </span>
                       <span className="px-3 py-1 bg-nuvanas-green-100 text-nuvanas-green-700 rounded-full text-sm">
                         pH Equilibrado
+                      </span>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              {/* Gel de Aloe Vera */}
+              <motion.div variants={fadeUpVariants}>
+                <Card className="group h-full hover:shadow-2xl transition-all duration-300 border-nuvanas-earth-100 overflow-hidden">
+                  <div className="relative">
+                    <img
+                      src="/assets/GelAloeVera.jpeg"
+                      alt="Gel de Aloe Vera HGW"
+                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute top-4 right-4 bg-nuvanas-earth-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      🌿 Aloe Vera
+                    </div>
+                  </div>
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-semibold text-nuvanas-green-800 mb-3">
+                      Gel de Aloe Vera HGW
+                    </h3>
+                    <p className="text-nuvanas-green-600 mb-4">
+                      Gel natural de aloe vera para hidratación profunda, ideal para pieles sensibles y con propiedades regeneradoras.
+                    </p>
+                    <div className="text-sm text-nuvanas-green-700 mb-4">
+                      <div className="mb-2 font-semibold">Beneficios:</div>
+                      <ul className="text-xs space-y-1">
+                        <li>• Hidratación profunda sin grasa</li>
+                        <li>• Calma irritaciones y enrojecimiento</li>
+                        <li>• Regenerador celular natural</li>
+                        <li>• Cicatrizante para heridas leves</li>
+                        <li>• Refrescante e hidratante</li>
+                        <li>• Minimiza dilatación de poros</li>
+                      </ul>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-nuvanas-earth-100 text-nuvanas-earth-700 rounded-full text-sm">
+                        Aloe Vera
+                      </span>
+                      <span className="px-3 py-1 bg-nuvanas-earth-100 text-nuvanas-earth-700 rounded-full text-sm">
+                        Regenerador
+                      </span>
+                      <span className="px-3 py-1 bg-nuvanas-earth-100 text-nuvanas-earth-700 rounded-full text-sm">
+                        Todo Tipo Piel
                       </span>
                     </div>
                   </CardContent>
